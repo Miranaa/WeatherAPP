@@ -1,0 +1,134 @@
+.container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: 3px solid #00bdaa;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 10pt;
+  color: #400082;
+}
+
+li.borderless {
+  border: none;
+}
+
+li.borderless:hover {
+  font-weight: bolder;
+  color: #fe346e;
+}
+
+li {
+  list-style: none;
+}
+
+nav.navbar-city {
+  background-color: #fe346e;
+  padding: 20px;
+  border-radius: 40px;
+  opacity: 0.7;
+}
+
+nav.navbar-city:hover {
+  opacity: 1;
+}
+
+nav {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+button.search-btn {
+  color: white;
+  border-color: #400082;
+  background-color: #400082;
+  margin: 1px;
+}
+
+button.search-btn:hover {
+  color: white;
+  border-color: #fe346e;
+  background-color: #400082;
+  font-weight: bolder;
+}
+
+button.current-btn {
+  color: white;
+  border-color: #00bdaa;
+  background-color: #00bdaa;
+  margin: 1px;
+}
+
+button.current-btn:hover {
+  color: white;
+  border-color: #fe346e;
+  background-color: #00bdaa;
+  font-weight: bolder;
+}
+
+.meteo-card {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 650px;
+}
+
+.current-meteo {
+  margin-top: 40px;
+  position: absolute;
+  left: 0;
+  text-transform: capitalize;
+}
+
+.fa-sun {
+  color: orange;
+}
+
+.temperature,
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.units {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+}
+
+.linkcolor {
+  color: #400082;
+}
+
+.linkcolor:hover {
+  color: #fe346e;
+}
+
+.linkcolor:active {
+  color: #fe346e;
+}
+
+.precipitation-info {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.days {
+  font-size: 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 55px;
+  min-width: max-content;
+}
+
+.tomorrow-meteo {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}

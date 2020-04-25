@@ -3,7 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c27dfc19c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item borderless">Paris</li>
+        <li class="list-group-item borderless">Lisbon</li>
+        <li class="list-group-item borderless">Sydney</li>
+        <li class="list-group-item borderless">San Francisco</li>
+      </ul>
+      <nav class="navbar-city navbar navbar-light">
+        <form class="form-inline" id="form-input">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Enter city"
+            aria-label="Search"
+            id="city-input"
+          />
+          <button
+            class="search-btn btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+            Search
+          </button>
+          <button
+            class="current-btn btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+            id="current-input"
+          >
+            Current
+          </button>
+        </form>
+      </nav>
+      <div class="card meteo-card" style="width: 100%;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <div class="current-meteo">
+                <ul>
+                  <li>
+                    <h1 id="city">Lisbon</h1>
+                  </li>
+                  <li id="current-time"></li>
+                  <li id="weather-description-input">Sunny</li>
+                  <li>
+                    <span class="temperature">
+                      <i class="fas fa-sun"></i>
+                      <span id="temperature-input">19</span>
+                    </span>
+                    <span class="units">
+                      <a href="#" class="linkcolor" id="celsius-link">°C</a> |
+                      <a href="#" class="linkcolor" id="fahrenheit-link">°F</a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="precipitation-info">
+                <ul>
+                  <li>Humidity: <span id="humidity-input"></span>%</li>
+                  <li>Wind: <span id="wind-speed-input"></span> km/h</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row days">
+                <div class="col-2">
+                  Fri
+                  <p><i class="fas fa-cloud-showers-heavy"></i> 14°C</p>
+                </div>
+                <div class="col-2">
+                  Sat
+                  <p><i class="fas fa-cloud-showers-heavy"></i> 14°C</p>
+                </div>
+                <div class="col-2">
+                  Sun
+                  <p><i class="fas fa-cloud-sun-rain"></i> 14°C</p>
+                </div>
+                <div class="col-2">
+                  Mon
+                  <p><i class="fas fa-cloud-sun-rain"></i> 14°C</p>
+                </div>
+                <div class="col-2">
+                  Tue
+                  <p><i class="fas fa-cloud-showers-heavy"></i> 14°C</p>
+                </div>
+              </div>
+              <div class="tomorrow-meteo">
+                <h3>Tomorrow</h3>
+                <ul>
+                  <li>
+                    Friday 18:00 minutes
+                  </li>
+                  <li>Rainy</li>
+                </ul>
+                <h4><i class="fas fa-cloud-sun-rain"></i> 12°C</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
 </html>
